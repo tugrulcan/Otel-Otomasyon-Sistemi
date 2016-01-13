@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblIptalEdilenRezervasyonlar">
+          <Key>
+            <PropertyRef Name="rezervasyonID" />
+          </Key>
+          <Property Name="rezervasyonID" Type="int" Nullable="false" />
+          <Property Name="iptalEdilmeTarihi" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblKrediKartlari">
+          <Key>
+            <PropertyRef Name="krediKartiID" />
+          </Key>
+          <Property Name="krediKartiID" Type="int" Nullable="false" />
+          <Property Name="kartNumarasi" Type="bigint" Nullable="false" />
+          <Property Name="kartUzerindekiAd" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="sonKullanımTarihi" Type="date" Nullable="false" />
+          <Property Name="guvenlikKodu" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblKullanicilar">
+          <Key>
+            <PropertyRef Name="kullaniciID" />
+          </Key>
+          <Property Name="kullaniciID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="kullaniciSifre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="kullaniciTipID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblKullaniciTipleri">
+          <Key>
+            <PropertyRef Name="kullaniciTipID" />
+          </Key>
+          <Property Name="kullaniciTipID" Type="int" Nullable="false" />
+          <Property Name="kullaniciTipi" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMusteriler">
+          <Key>
+            <PropertyRef Name="musteriID" />
+          </Key>
+          <Property Name="musteriID" Type="int" Nullable="false" />
+          <Property Name="musteriAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="musteriSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="musteriEposta" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="krediKartiID" Type="int" Nullable="false" />
+          <Property Name="kullaniciID" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblOdaDurum">
+          <Key>
+            <PropertyRef Name="OdaDurumKodu" />
+          </Key>
+          <Property Name="OdaDurumKodu" Type="int" Nullable="false" />
+          <Property Name="durumAciklama" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblOdalar">
+          <Key>
+            <PropertyRef Name="OdaID" />
+          </Key>
+          <Property Name="OdaID" Type="int" Nullable="false" />
+          <Property Name="OdaDurumKodu" Type="int" Nullable="false" />
+          <Property Name="OdaTipiID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblOdaTipleri">
+          <Key>
+            <PropertyRef Name="OdaTipiID" />
+          </Key>
+          <Property Name="OdaTipiID" Type="int" Nullable="false" />
+          <Property Name="Tip" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblRezervasyon">
+          <Key>
+            <PropertyRef Name="rezervasyonID" />
+          </Key>
+          <Property Name="rezervasyonID" Type="int" Nullable="false" />
+          <Property Name="OdaID" Type="int" />
+          <Property Name="baslangicTarihi" Type="datetime" Nullable="false" />
+          <Property Name="bitisTarihi" Type="datetime" Nullable="false" />
+          <Property Name="ucret" Type="money" />
+          <Property Name="rezervasyonTipID" Type="int" Nullable="false" />
+          <Property Name="rezervasyonDurumID" Type="int" Nullable="false" />
+          <Property Name="tabanFiyatID" Type="int" Nullable="false" />
+          <Property Name="rezervasyonOlusturmaTarihi" Type="datetime" Nullable="false" />
+          <Property Name="musteriID" Type="int" Nullable="false" />
+          <Property Name="Yorum" Type="text" />
+        </EntityType>
+        <EntityType Name="tblRezervasyonDurum">
+          <Key>
+            <PropertyRef Name="rezervasyonDurumID" />
+          </Key>
+          <Property Name="rezervasyonDurumID" Type="int" Nullable="false" />
+          <Property Name="durumAciklama" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblRezervasyonTipleri">
+          <Key>
+            <PropertyRef Name="rezervasyonTipID" />
+          </Key>
+          <Property Name="rezervasyonTipID" Type="int" Nullable="false" />
+          <Property Name="rezervasyonTipi" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblTabanFiyatlar">
+          <Key>
+            <PropertyRef Name="tabanFiyatID" />
+          </Key>
+          <Property Name="tabanFiyatID" Type="int" Nullable="false" />
+          <Property Name="tabanFiyat" Type="money" Nullable="false" />
+          <Property Name="tanımlandigiTarih" Type="datetime" Nullable="false" />
+          <Property Name="sonGecerlilikTarihi" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="tblIptalEdilenRezervasyonlar" EntityType="Self.tblIptalEdilenRezervasyonlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblKrediKartlari" EntityType="Self.tblKrediKartlari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblKullanicilar" EntityType="Self.tblKullanicilar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblKullaniciTipleri" EntityType="Self.tblKullaniciTipleri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMusteriler" EntityType="Self.tblMusteriler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblOdaDurum" EntityType="Self.tblOdaDurum" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblOdalar" EntityType="Self.tblOdalar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblOdaTipleri" EntityType="Self.tblOdaTipleri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRezervasyon" EntityType="Self.tblRezervasyon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRezervasyonDurum" EntityType="Self.tblRezervasyonDurum" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRezervasyonTipleri" EntityType="Self.tblRezervasyonTipleri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblTabanFiyatlar" EntityType="Self.tblTabanFiyatlar" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblIptalEdilenRezervasyonlar">
+          <Key>
+            <PropertyRef Name="rezervasyonID" />
+          </Key>
+          <Property Name="rezervasyonID" Type="Int32" Nullable="false" />
+          <Property Name="iptalEdilmeTarihi" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblKrediKartlari">
+          <Key>
+            <PropertyRef Name="krediKartiID" />
+          </Key>
+          <Property Name="krediKartiID" Type="Int32" Nullable="false" />
+          <Property Name="kartNumarasi" Type="Int64" Nullable="false" />
+          <Property Name="kartUzerindekiAd" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="sonKullanımTarihi" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="guvenlikKodu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblKullanicilar">
+          <Key>
+            <PropertyRef Name="kullaniciID" />
+          </Key>
+          <Property Name="kullaniciID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="kullaniciSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="kullaniciTipID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblKullaniciTipleri">
+          <Key>
+            <PropertyRef Name="kullaniciTipID" />
+          </Key>
+          <Property Name="kullaniciTipID" Type="Int32" Nullable="false" />
+          <Property Name="kullaniciTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMusteriler">
+          <Key>
+            <PropertyRef Name="musteriID" />
+          </Key>
+          <Property Name="musteriID" Type="Int32" Nullable="false" />
+          <Property Name="musteriAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="musteriSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="musteriEposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="krediKartiID" Type="Int32" Nullable="false" />
+          <Property Name="kullaniciID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblOdaDurum">
+          <Key>
+            <PropertyRef Name="OdaDurumKodu" />
+          </Key>
+          <Property Name="OdaDurumKodu" Type="Int32" Nullable="false" />
+          <Property Name="durumAciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblOdalar">
+          <Key>
+            <PropertyRef Name="OdaID" />
+          </Key>
+          <Property Name="OdaID" Type="Int32" Nullable="false" />
+          <Property Name="OdaDurumKodu" Type="Int32" Nullable="false" />
+          <Property Name="OdaTipiID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblOdaTipleri">
+          <Key>
+            <PropertyRef Name="OdaTipiID" />
+          </Key>
+          <Property Name="OdaTipiID" Type="Int32" Nullable="false" />
+          <Property Name="Tip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblRezervasyon">
+          <Key>
+            <PropertyRef Name="rezervasyonID" />
+          </Key>
+          <Property Name="rezervasyonID" Type="Int32" Nullable="false" />
+          <Property Name="OdaID" Type="Int32" />
+          <Property Name="baslangicTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="bitisTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ucret" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="rezervasyonTipID" Type="Int32" Nullable="false" />
+          <Property Name="rezervasyonDurumID" Type="Int32" Nullable="false" />
+          <Property Name="tabanFiyatID" Type="Int32" Nullable="false" />
+          <Property Name="rezervasyonOlusturmaTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="musteriID" Type="Int32" Nullable="false" />
+          <Property Name="Yorum" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblRezervasyonDurum">
+          <Key>
+            <PropertyRef Name="rezervasyonDurumID" />
+          </Key>
+          <Property Name="rezervasyonDurumID" Type="Int32" Nullable="false" />
+          <Property Name="durumAciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblRezervasyonTipleri">
+          <Key>
+            <PropertyRef Name="rezervasyonTipID" />
+          </Key>
+          <Property Name="rezervasyonTipID" Type="Int32" Nullable="false" />
+          <Property Name="rezervasyonTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblTabanFiyatlar">
+          <Key>
+            <PropertyRef Name="tabanFiyatID" />
+          </Key>
+          <Property Name="tabanFiyatID" Type="Int32" Nullable="false" />
+          <Property Name="tabanFiyat" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="tanımlandigiTarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="sonGecerlilikTarihi" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="DBOtelEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblIptalEdilenRezervasyonlar" EntityType="Self.tblIptalEdilenRezervasyonlar" />
+          <EntitySet Name="tblKrediKartlari" EntityType="Self.tblKrediKartlari" />
+          <EntitySet Name="tblKullanicilar" EntityType="Self.tblKullanicilar" />
+          <EntitySet Name="tblKullaniciTipleri" EntityType="Self.tblKullaniciTipleri" />
+          <EntitySet Name="tblMusteriler" EntityType="Self.tblMusteriler" />
+          <EntitySet Name="tblOdaDurum" EntityType="Self.tblOdaDurum" />
+          <EntitySet Name="tblOdalar" EntityType="Self.tblOdalar" />
+          <EntitySet Name="tblOdaTipleri" EntityType="Self.tblOdaTipleri" />
+          <EntitySet Name="tblRezervasyon" EntityType="Self.tblRezervasyon" />
+          <EntitySet Name="tblRezervasyonDurum" EntityType="Self.tblRezervasyonDurum" />
+          <EntitySet Name="tblRezervasyonTipleri" EntityType="Self.tblRezervasyonTipleri" />
+          <EntitySet Name="tblTabanFiyatlar" EntityType="Self.tblTabanFiyatlar" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="DBOtelEntities">
+          <EntitySetMapping Name="tblIptalEdilenRezervasyonlar">
+            <EntityTypeMapping TypeName="Model.tblIptalEdilenRezervasyonlar">
+              <MappingFragment StoreEntitySet="tblIptalEdilenRezervasyonlar">
+                <ScalarProperty Name="rezervasyonID" ColumnName="rezervasyonID" />
+                <ScalarProperty Name="iptalEdilmeTarihi" ColumnName="iptalEdilmeTarihi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblKrediKartlari">
+            <EntityTypeMapping TypeName="Model.tblKrediKartlari">
+              <MappingFragment StoreEntitySet="tblKrediKartlari">
+                <ScalarProperty Name="krediKartiID" ColumnName="krediKartiID" />
+                <ScalarProperty Name="kartNumarasi" ColumnName="kartNumarasi" />
+                <ScalarProperty Name="kartUzerindekiAd" ColumnName="kartUzerindekiAd" />
+                <ScalarProperty Name="sonKullanımTarihi" ColumnName="sonKullanımTarihi" />
+                <ScalarProperty Name="guvenlikKodu" ColumnName="guvenlikKodu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblKullanicilar">
+            <EntityTypeMapping TypeName="Model.tblKullanicilar">
+              <MappingFragment StoreEntitySet="tblKullanicilar">
+                <ScalarProperty Name="kullaniciID" ColumnName="kullaniciID" />
+                <ScalarProperty Name="kullaniciSifre" ColumnName="kullaniciSifre" />
+                <ScalarProperty Name="kullaniciTipID" ColumnName="kullaniciTipID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblKullaniciTipleri">
+            <EntityTypeMapping TypeName="Model.tblKullaniciTipleri">
+              <MappingFragment StoreEntitySet="tblKullaniciTipleri">
+                <ScalarProperty Name="kullaniciTipID" ColumnName="kullaniciTipID" />
+                <ScalarProperty Name="kullaniciTipi" ColumnName="kullaniciTipi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMusteriler">
+            <EntityTypeMapping TypeName="Model.tblMusteriler">
+              <MappingFragment StoreEntitySet="tblMusteriler">
+                <ScalarProperty Name="musteriID" ColumnName="musteriID" />
+                <ScalarProperty Name="musteriAd" ColumnName="musteriAd" />
+                <ScalarProperty Name="musteriSoyad" ColumnName="musteriSoyad" />
+                <ScalarProperty Name="musteriEposta" ColumnName="musteriEposta" />
+                <ScalarProperty Name="krediKartiID" ColumnName="krediKartiID" />
+                <ScalarProperty Name="kullaniciID" ColumnName="kullaniciID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblOdaDurum">
+            <EntityTypeMapping TypeName="Model.tblOdaDurum">
+              <MappingFragment StoreEntitySet="tblOdaDurum">
+                <ScalarProperty Name="OdaDurumKodu" ColumnName="OdaDurumKodu" />
+                <ScalarProperty Name="durumAciklama" ColumnName="durumAciklama" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblOdalar">
+            <EntityTypeMapping TypeName="Model.tblOdalar">
+              <MappingFragment StoreEntitySet="tblOdalar">
+                <ScalarProperty Name="OdaID" ColumnName="OdaID" />
+                <ScalarProperty Name="OdaDurumKodu" ColumnName="OdaDurumKodu" />
+                <ScalarProperty Name="OdaTipiID" ColumnName="OdaTipiID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblOdaTipleri">
+            <EntityTypeMapping TypeName="Model.tblOdaTipleri">
+              <MappingFragment StoreEntitySet="tblOdaTipleri">
+                <ScalarProperty Name="OdaTipiID" ColumnName="OdaTipiID" />
+                <ScalarProperty Name="Tip" ColumnName="Tip" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRezervasyon">
+            <EntityTypeMapping TypeName="Model.tblRezervasyon">
+              <MappingFragment StoreEntitySet="tblRezervasyon">
+                <ScalarProperty Name="rezervasyonID" ColumnName="rezervasyonID" />
+                <ScalarProperty Name="OdaID" ColumnName="OdaID" />
+                <ScalarProperty Name="baslangicTarihi" ColumnName="baslangicTarihi" />
+                <ScalarProperty Name="bitisTarihi" ColumnName="bitisTarihi" />
+                <ScalarProperty Name="ucret" ColumnName="ucret" />
+                <ScalarProperty Name="rezervasyonTipID" ColumnName="rezervasyonTipID" />
+                <ScalarProperty Name="rezervasyonDurumID" ColumnName="rezervasyonDurumID" />
+                <ScalarProperty Name="tabanFiyatID" ColumnName="tabanFiyatID" />
+                <ScalarProperty Name="rezervasyonOlusturmaTarihi" ColumnName="rezervasyonOlusturmaTarihi" />
+                <ScalarProperty Name="musteriID" ColumnName="musteriID" />
+                <ScalarProperty Name="Yorum" ColumnName="Yorum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRezervasyonDurum">
+            <EntityTypeMapping TypeName="Model.tblRezervasyonDurum">
+              <MappingFragment StoreEntitySet="tblRezervasyonDurum">
+                <ScalarProperty Name="rezervasyonDurumID" ColumnName="rezervasyonDurumID" />
+                <ScalarProperty Name="durumAciklama" ColumnName="durumAciklama" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRezervasyonTipleri">
+            <EntityTypeMapping TypeName="Model.tblRezervasyonTipleri">
+              <MappingFragment StoreEntitySet="tblRezervasyonTipleri">
+                <ScalarProperty Name="rezervasyonTipID" ColumnName="rezervasyonTipID" />
+                <ScalarProperty Name="rezervasyonTipi" ColumnName="rezervasyonTipi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTabanFiyatlar">
+            <EntityTypeMapping TypeName="Model.tblTabanFiyatlar">
+              <MappingFragment StoreEntitySet="tblTabanFiyatlar">
+                <ScalarProperty Name="tabanFiyatID" ColumnName="tabanFiyatID" />
+                <ScalarProperty Name="tabanFiyat" ColumnName="tabanFiyat" />
+                <ScalarProperty Name="tanımlandigiTarih" ColumnName="tanımlandigiTarih" />
+                <ScalarProperty Name="sonGecerlilikTarihi" ColumnName="sonGecerlilikTarihi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

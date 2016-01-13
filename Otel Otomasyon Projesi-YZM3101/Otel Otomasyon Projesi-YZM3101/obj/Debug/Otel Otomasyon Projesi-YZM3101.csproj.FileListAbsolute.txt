@@ -1,0 +1,47 @@
+c:\users\tuğrul can\documents\visual studio 2013\Projects\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\Otel Otomasyon Projesi-YZM3101.exe.config
+C:\Users\Tuğrul Can\Documents\GitHub\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\Otel Otomasyon Projesi-YZM3101.exe.config
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\Otel Otomasyon Projesi-YZM3101.exe.config
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\Otel Otomasyon Projesi-YZM3101.exe
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\Otel Otomasyon Projesi-YZM3101.pdb
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\EntityFramework.dll
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\EntityFramework.xml
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.Properties.Resources.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel Otomasyon Projesi-YZM3101.csproj.GenerateResource.Cache
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel Otomasyon Projesi-YZM3101.exe
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel Otomasyon Projesi-YZM3101.pdb
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.Form1.resources
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\Otel Otomasyon Projesi-YZM3101.exe.config
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel Otomasyon Projesi-YZM3101.exe
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel Otomasyon Projesi-YZM3101.pdb
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.Form1.resources
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.Properties.Resources.resources
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel Otomasyon Projesi-YZM3101.csproj.GenerateResource.Cache
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\AppData\OtelDB.mdf
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\AppData\OtelDB_log.ldf
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\Otel Otomasyon Projesi-YZM3101.exe
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\Otel Otomasyon Projesi-YZM3101.pdb
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\EntityFramework.dll
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\EntityFramework.xml
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.frmTabanFiyatEkle.resources
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.frmGunlukDolulukOranRaporEkranı.resources
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.frmTabanFiyatListele.resources
+C:\Users\Tuğrul Can\Documents\GitHub\OtelOtomasyon\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.frmOnOdemeliRezervasyonBilgileriDegistirme.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.frmGunlukDolulukOranRaporEkranı.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.frmOnOdemeliRezervasyonBilgileriDegistirme.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.frmTabanFiyatListele.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.frmTabanFiyatEkle.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.H.frmTesvikRaporu.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.M.frmBeklenenDolulukRaporu.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.M.frmFatura.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.M.frmGunlukGelenlerRaporu.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.S.frmBeklenenOdaGelirRaporu.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.S.frmKayit.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.S.frmLogin.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.S.frmMusteriCheckin.resources
+C:\Users\Tuğrul Can\Desktop\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel_Otomasyon_Projesi_YZM3101.T.frmRezervasyonYapma.resources
+C:\Users\Tuğrul Can\Documents\GitHub\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel Otomasyon Projesi-YZM3101.exe
+C:\Users\Tuğrul Can\Documents\GitHub\Otel-Otomasyon-Projesi---YZM3101\Otel Otomasyon Projesi-YZM3101\Otel Otomasyon Projesi-YZM3101\obj\Debug\Otel Otomasyon Projesi-YZM3101.pdb

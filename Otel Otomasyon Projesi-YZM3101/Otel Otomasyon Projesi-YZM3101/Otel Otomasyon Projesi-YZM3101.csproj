@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74390280-291B-4968-BF79-33B6C12973D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Otel_Otomasyon_Projesi_YZM3101</RootNamespace>
+    <AssemblyName>Otel Otomasyon Projesi-YZM3101</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business Layer\KartView.cs" />
+    <Compile Include="Business Layer\KullaniciId.cs" />
+    <Compile Include="Business Layer\KullaniciIslemler.cs" />
+    <Compile Include="Business Layer\MusteriView.cs" />
+    <Compile Include="Business Layer\OdaIslemleri.cs" />
+    <Compile Include="Business Layer\RaporIslemleri.cs" />
+    <Compile Include="Business Layer\RezervasyonIslem.cs" />
+    <Compile Include="Business Layer\RezervasyonView.cs" />
+    <Compile Include="dbOtel2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbOtel2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbOtel2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbOtel2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbOtel2.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\frmTesvikRaporu.cs" />
+    <Compile Include="H\frmTesvikRaporu.Designer.cs">
+      <DependentUpon>frmTesvikRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsKatmani\KullaniciIslemleri.cs" />
+    <Compile Include="M\frmBeklenenDolulukRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\frmBeklenenDolulukRaporu.Designer.cs">
+      <DependentUpon>frmBeklenenDolulukRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M\frmFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\frmFatura.Designer.cs">
+      <DependentUpon>frmFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M\frmGunlukGelenlerRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\frmGunlukGelenlerRaporu.Designer.cs">
+      <DependentUpon>frmGunlukGelenlerRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S\frmBeklenenOdaGelirRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S\frmBeklenenOdaGelirRaporu.Designer.cs">
+      <DependentUpon>frmBeklenenOdaGelirRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T\frmGunlukDolulukOranRaporEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T\frmGunlukDolulukOranRaporEkranı.Designer.cs">
+      <DependentUpon>frmGunlukDolulukOranRaporEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S\frmKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S\frmKayit.Designer.cs" />
+    <Compile Include="S\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S\frmLogin.Designer.cs" />
+    <Compile Include="S\frmMusteriCheckin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S\frmMusteriCheckin.Designer.cs" />
+    <Compile Include="T\frmOnOdemeliRezervasyonBilgileriDegistirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T\frmOnOdemeliRezervasyonBilgileriDegistirme.Designer.cs">
+      <DependentUpon>frmOnOdemeliRezervasyonBilgileriDegistirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T\frmRezervasyonYapma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T\frmRezervasyonYapma.Designer.cs" />
+    <Compile Include="T\frmTabanFiyatListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T\frmTabanFiyatListele.Designer.cs">
+      <DependentUpon>frmTabanFiyatListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T\frmTabanFiyatEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T\frmTabanFiyatEkle.Designer.cs">
+      <DependentUpon>frmTabanFiyatEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tblIptalEdilenRezervasyonlar.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblKrediKartlari.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblKullanicilar.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblKullaniciTipleri.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMusteriler.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOdaDurum.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOdalar.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOdaTipleri.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRezervasyon.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRezervasyonDurum.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRezervasyonTipleri.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTabanFiyatlar.cs">
+      <DependentUpon>dbOtel2.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\frmTesvikRaporu.resx">
+      <DependentUpon>frmTesvikRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\frmBeklenenDolulukRaporu.resx">
+      <DependentUpon>frmBeklenenDolulukRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\frmFatura.resx">
+      <DependentUpon>frmFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\frmGunlukGelenlerRaporu.resx">
+      <DependentUpon>frmGunlukGelenlerRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S\frmBeklenenOdaGelirRaporu.resx">
+      <DependentUpon>frmBeklenenOdaGelirRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T\frmGunlukDolulukOranRaporEkranı.resx">
+      <DependentUpon>frmGunlukDolulukOranRaporEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S\frmKayit.resx" />
+    <EmbeddedResource Include="S\frmLogin.resx" />
+    <EmbeddedResource Include="S\frmMusteriCheckin.resx" />
+    <EmbeddedResource Include="T\frmOnOdemeliRezervasyonBilgileriDegistirme.resx">
+      <DependentUpon>frmOnOdemeliRezervasyonBilgileriDegistirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T\frmRezervasyonYapma.resx" />
+    <EmbeddedResource Include="T\frmTabanFiyatListele.resx">
+      <DependentUpon>frmTabanFiyatListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T\frmTabanFiyatEkle.resx">
+      <DependentUpon>frmTabanFiyatEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="dbOtel2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbOtel2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="dbOtel2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbOtel2.edmx</DependentUpon>
+      <LastGenOutput>dbOtel2.Context.cs</LastGenOutput>
+    </None>
+    <None Include="dbOtel2.edmx.diagram">
+      <DependentUpon>dbOtel2.edmx</DependentUpon>
+    </None>
+    <None Include="dbOtel2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbOtel2.edmx</DependentUpon>
+      <LastGenOutput>dbOtel2.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

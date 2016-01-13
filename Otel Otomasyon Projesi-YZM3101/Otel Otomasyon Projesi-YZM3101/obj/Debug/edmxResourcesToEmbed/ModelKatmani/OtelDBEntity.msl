@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="tblIptalEdilenRezervasyonlar">
+      <EntityTypeMapping TypeName="Model.tblIptalEdilenRezervasyonlar">
+        <MappingFragment StoreEntitySet="tblIptalEdilenRezervasyonlar">
+          <ScalarProperty Name="rezervasyonID" ColumnName="rezervasyonID" />
+          <ScalarProperty Name="iptalEdilmeTarihi" ColumnName="iptalEdilmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKrediKartlari">
+      <EntityTypeMapping TypeName="Model.tblKrediKartlari">
+        <MappingFragment StoreEntitySet="tblKrediKartlari">
+          <ScalarProperty Name="krediKartiID" ColumnName="krediKartiID" />
+          <ScalarProperty Name="kartNumarasi" ColumnName="kartNumarasi" />
+          <ScalarProperty Name="kartUzerindekiAd" ColumnName="kartUzerindekiAd" />
+          <ScalarProperty Name="sonKullanımTarihi" ColumnName="sonKullanımTarihi" />
+          <ScalarProperty Name="guvenlikKodu" ColumnName="guvenlikKodu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKullanicilar">
+      <EntityTypeMapping TypeName="Model.tblKullanicilar">
+        <MappingFragment StoreEntitySet="tblKullanicilar">
+          <ScalarProperty Name="kullaniciID" ColumnName="kullaniciID" />
+          <ScalarProperty Name="kullaniciSifre" ColumnName="kullaniciSifre" />
+          <ScalarProperty Name="kullaniciTipID" ColumnName="kullaniciTipID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKullaniciTipleri">
+      <EntityTypeMapping TypeName="Model.tblKullaniciTipleri">
+        <MappingFragment StoreEntitySet="tblKullaniciTipleri">
+          <ScalarProperty Name="kullaniciTipID" ColumnName="kullaniciTipID" />
+          <ScalarProperty Name="kullaniciTipi" ColumnName="kullaniciTipi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMusteriler">
+      <EntityTypeMapping TypeName="Model.tblMusteriler">
+        <MappingFragment StoreEntitySet="tblMusteriler">
+          <ScalarProperty Name="musteriID" ColumnName="musteriID" />
+          <ScalarProperty Name="musteriAd" ColumnName="musteriAd" />
+          <ScalarProperty Name="musteriSoyad" ColumnName="musteriSoyad" />
+          <ScalarProperty Name="musteriEposta" ColumnName="musteriEposta" />
+          <ScalarProperty Name="krediKartiID" ColumnName="krediKartiID" />
+          <ScalarProperty Name="kullaniciID" ColumnName="kullaniciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOdaDurum">
+      <EntityTypeMapping TypeName="Model.tblOdaDurum">
+        <MappingFragment StoreEntitySet="tblOdaDurum">
+          <ScalarProperty Name="OdaDurumKodu" ColumnName="OdaDurumKodu" />
+          <ScalarProperty Name="durumAciklama" ColumnName="durumAciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOdalar">
+      <EntityTypeMapping TypeName="Model.tblOdalar">
+        <MappingFragment StoreEntitySet="tblOdalar">
+          <ScalarProperty Name="OdaID" ColumnName="OdaID" />
+          <ScalarProperty Name="OdaDurumKodu" ColumnName="OdaDurumKodu" />
+          <ScalarProperty Name="OdaTipiID" ColumnName="OdaTipiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOdaTipleri">
+      <EntityTypeMapping TypeName="Model.tblOdaTipleri">
+        <MappingFragment StoreEntitySet="tblOdaTipleri">
+          <ScalarProperty Name="OdaTipiID" ColumnName="OdaTipiID" />
+          <ScalarProperty Name="Tip" ColumnName="Tip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRezervasyon">
+      <EntityTypeMapping TypeName="Model.tblRezervasyon">
+        <MappingFragment StoreEntitySet="tblRezervasyon">
+          <ScalarProperty Name="rezervasyonID" ColumnName="rezervasyonID" />
+          <ScalarProperty Name="OdaID" ColumnName="OdaID" />
+          <ScalarProperty Name="baslangicTarihi" ColumnName="baslangicTarihi" />
+          <ScalarProperty Name="bitisTarihi" ColumnName="bitisTarihi" />
+          <ScalarProperty Name="ucret" ColumnName="ucret" />
+          <ScalarProperty Name="rezervasyonTipID" ColumnName="rezervasyonTipID" />
+          <ScalarProperty Name="rezervasyonDurumID" ColumnName="rezervasyonDurumID" />
+          <ScalarProperty Name="tabanFiyatID" ColumnName="tabanFiyatID" />
+          <ScalarProperty Name="rezervasyonOlusturmaTarihi" ColumnName="rezervasyonOlusturmaTarihi" />
+          <ScalarProperty Name="musteriID" ColumnName="musteriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRezervasyonDurum">
+      <EntityTypeMapping TypeName="Model.tblRezervasyonDurum">
+        <MappingFragment StoreEntitySet="tblRezervasyonDurum">
+          <ScalarProperty Name="rezervasyonDurumID" ColumnName="rezervasyonDurumID" />
+          <ScalarProperty Name="durumAciklama" ColumnName="durumAciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRezervasyonTipleri">
+      <EntityTypeMapping TypeName="Model.tblRezervasyonTipleri">
+        <MappingFragment StoreEntitySet="tblRezervasyonTipleri">
+          <ScalarProperty Name="rezervasyonTipID" ColumnName="rezervasyonTipID" />
+          <ScalarProperty Name="rezervasyonTipi" ColumnName="rezervasyonTipi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTabanFiyatlar">
+      <EntityTypeMapping TypeName="Model.tblTabanFiyatlar">
+        <MappingFragment StoreEntitySet="tblTabanFiyatlar">
+          <ScalarProperty Name="tabanFiyatID" ColumnName="tabanFiyatID" />
+          <ScalarProperty Name="tabanFiyat" ColumnName="tabanFiyat" />
+          <ScalarProperty Name="tanımlandigiTarih" ColumnName="tanımlandigiTarih" />
+          <ScalarProperty Name="sonGecerlilikTarihi" ColumnName="sonGecerlilikTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
